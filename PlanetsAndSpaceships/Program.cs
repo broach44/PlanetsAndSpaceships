@@ -7,6 +7,7 @@ namespace PlanetsAndSpaceships
     {
         static void Main(string[] args)
         {
+      
             List<string> planetList = new List<string>() { "Mercury", "Mars" };
             List<string> lastTwoPlanets = new List<string>() { "Uranus", "Neptune" };
 
@@ -19,7 +20,7 @@ namespace PlanetsAndSpaceships
             planetList.Add("Pluto");
             var rockyPlanets = planetList.GetRange(0, 4);
             planetList.Remove("Pluto");
-            Console.WriteLine($"{String.Join(", ", planetList)}");
+            Console.WriteLine($"List of planets: {String.Join(", ", planetList)}");
             Console.WriteLine($"These are the rocky planets: {string.Join(", ", rockyPlanets)}");
             Console.ReadLine();
 
